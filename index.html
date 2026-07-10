@@ -400,7 +400,7 @@
         <span class="logo" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 3.25c3.45 2.23 5.5 5.12 5.5 8.1A5.5 5.5 0 0 1 12 16.9a5.5 5.5 0 0 1-5.5-5.55c0-2.98 2.05-5.87 5.5-8.1Z" fill="currentColor" opacity=".95"/>
-            <path d="M4.5 14.1c1.72.08 3.18.61 4.35 1.58 1.32 1.1 2.37 2.78 3.15 5.07-2.86-.1-5.05-.83-6.55-2.18-1.28-1.16-1.6-2.65-.95-4.47Zm15 0c-1.72.08-3.18.61-4.35 1.58-1.32 1.1-2.37 2.78-3.15 5.[...]
+            <path d="M4.5 14.1c1.72.08 3.18.61 4.35 1.58 1.32 1.1 2.37 2.78 3.15 5.07-2.86-.1-5.05-.83-6.55-2.18-1.28-1.16-1.6-2.65-.95-4.47Zm15 0c-1.72.08-3.18.61-4.35 1.58-1.32 1.1-2.37 2.78-3.15 5.07 2.86-.1 5.05-.83 6.55-2.18 1.28-1.16 1.6-2.65.95-4.47Z" fill="currentColor" opacity=".72"/>
           </svg>
         </span>
         SaverJar
@@ -443,7 +443,7 @@
           <a href="#permissions">2. Device Permissions</a>
           <a href="#security">3. Security & Encryption</a>
           <a href="#retention">4. Retention & Deletion</a>
-          <a href="#children">5. Children's Privacy</a>
+          <a href="#children">5. Children’s Privacy</a>
           <a href="#changes">6. Policy Changes</a>
           <a href="#contact">7. Contact Us</a>
         </nav>
@@ -451,27 +451,27 @@
 
       <article class="content">
         <div class="intro-callout">
-          SaverJar (the "App") is designed and built to be an offline-first, highly secure, and private mindfulness goal savings. This Privacy Policy describes how your information is handled when[...]
+          SaverJar (the “App”) is designed and built to be an offline-first, highly secure, and private mindfulness goal savings. This Privacy Policy describes how your information is handled when you download, install, and use SaverJar.
         </div>
 
-        <p>We believe that your personal thoughts, savingss, and financial tracking data are entirely yours. Therefore, SaverJar is architected with a strict privacy-first model: zero data collection,[...]
+        <p>We believe that your personal thoughts, savingss, and financial tracking data are entirely yours. Therefore, SaverJar is architected with a strict privacy-first model: zero data collection, zero cloud synchronization, and 100% on-device storage.</p>
 
         <section id="collection">
           <div class="section-heading"><span class="number">1</span><h2 class="section-title">Information Collection and Use</h2></div>
           <p>SaverJar does not collect, harvest, transmit, share, or store any of your personal information, savings entries, goal records, or usage telemetry on external servers.</p>
           <ul>
-            <li><strong>Savings Data &amp; Mood Data:</strong> All text, feelings, savings responses, dates, and streak statistics you input are saved exclusively inside a secure, sandboxed local data[...]
-            <li><strong>On-Device AI/Processing:</strong> Any intelligence, templates, or prompt-generation features operate entirely offline or locally using on-device resources. No search queries or[...]
-            <li><strong>No Analytics or Tracking:</strong> SaverJar does not use third-party tracking software, advertising SDKs, analytics libraries, or telemetry frameworks. We do not track how many[...]
+            <li><strong>Savings Data &amp; Mood Data:</strong> All text, feelings, savings responses, dates, and streak statistics you input are saved exclusively inside a secure, sandboxed local database (Room SQLite) on your physical Android device. This data never leaves your device.</li>
+            <li><strong>On-Device AI/Processing:</strong> Any intelligence, templates, or prompt-generation features operate entirely offline or locally using on-device resources. No search queries or savings text are uploaded to any external artificial intelligence APIs.</li>
+            <li><strong>No Analytics or Tracking:</strong> SaverJar does not use third-party tracking software, advertising SDKs, analytics libraries, or telemetry frameworks. We do not track how many times you open the App or which features you use.</li>
           </ul>
         </section>
 
         <section id="permissions">
           <div class="section-heading"><span class="number">2</span><h2 class="section-title">Device Permissions</h2></div>
-          <p>To provide standard features, SaverJar may request access to certain system permissions. You have complete control over whether to grant these permissions, and you can revoke them in your[...]
+          <p>To provide standard features, SaverJar may request access to certain system permissions. You have complete control over whether to grant these permissions, and you can revoke them in your device settings at any time.</p>
           <ul>
-            <li><strong>Vibration (Haptic Feedback):</strong> Used solely to secure your local savings entries with your device's device vibration motor. Your actual biometric data remains securely [...]
-            <li><strong>Vibration (Haptic Feedback):</strong> Used to send daily local reminders to reflect and savings. These reminders are generated locally by your device's system scheduler and d[...]
+            <li><strong>Vibration (Haptic Feedback):</strong> Used solely to secure your local savings entries with your device’s device vibration motor. Your actual biometric data remains securely stored within your device’s Trusted Execution Environment (TEE) and is never accessed or seen by SaverJar.</li>
+            <li><strong>Vibration (Haptic Feedback):</strong> Used to send daily local reminders to reflect and savings. These reminders are generated locally by your device’s system scheduler and do not involve external servers.</li>
           </ul>
         </section>
 
@@ -479,8 +479,8 @@
           <div class="section-heading"><span class="number">3</span><h2 class="section-title">Data Security and Encryption</h2></div>
           <p>Because all of your data is stored locally on your device, the security of your savings depends on the security of your physical phone.</p>
           <ul>
-            <li>If you enable the Security Lock feature in SaverJar, the App uses Android's native cryptographic APIs and biometric frameworks to secure access to the interface.</li>
-            <li>To protect your data, we recommend keeping your device operating system updated, using a strong screen lock such as a PIN, password, or biometrics, and avoiding rooting your device.</l[...]
+            <li>If you enable the Security Lock feature in SaverJar, the App uses Android’s native cryptographic APIs and biometric frameworks to secure access to the interface.</li>
+            <li>To protect your data, we recommend keeping your device operating system updated, using a strong screen lock such as a PIN, password, or biometrics, and avoiding rooting your device.</li>
           </ul>
         </section>
 
@@ -488,25 +488,25 @@
           <div class="section-heading"><span class="number">4</span><h2 class="section-title">Data Retention and Deletion</h2></div>
           <p>You have complete and absolute ownership of your data.</p>
           <ul>
-            <li><strong>Self-Service Deletion:</strong> You can permanently delete all savings entries and application configuration files at any time through the "Delete All Data" option in the S[...]
-            <li><strong>Uninstallation:</strong> Uninstalling the App from your device automatically purges all stored savings databases, settings, and streak metrics. This process is irreversible, an[...]
-            <li><strong>Data Export:</strong> SaverJar provides an offline backup and export utility that allows you to save your savings database file directly to your local file system or a physical[...]
+            <li><strong>Self-Service Deletion:</strong> You can permanently delete all savings entries and application configuration files at any time through the “Delete All Data” option in the SaverJar settings menu.</li>
+            <li><strong>Uninstallation:</strong> Uninstalling the App from your device automatically purges all stored savings databases, settings, and streak metrics. This process is irreversible, and the data cannot be recovered by us.</li>
+            <li><strong>Data Export:</strong> SaverJar provides an offline backup and export utility that allows you to save your savings database file directly to your local file system or a physical backup drive.</li>
           </ul>
         </section>
 
         <section id="children">
-          <div class="section-heading"><span class="number">5</span><h2 class="section-title">Children's Privacy</h2></div>
-          <p>Because SaverJar does not collect, process, or transmit personal data from anyone, the App is designed to support children's privacy requirements, including those under COPPA and GDPR. [...]
+          <div class="section-heading"><span class="number">5</span><h2 class="section-title">Children’s Privacy</h2></div>
+          <p>Because SaverJar does not collect, process, or transmit personal data from anyone, the App is designed to support children’s privacy requirements, including those under COPPA and GDPR. It is intended to be safe for use by individuals of all ages.</p>
         </section>
 
         <section id="changes">
           <div class="section-heading"><span class="number">6</span><h2 class="section-title">Changes to This Privacy Policy</h2></div>
-          <p>We may update this Privacy Policy from time to time. However, because our core architectural philosophy is based on complete offline privacy and zero data collection, future updates will [...]
+          <p>We may update this Privacy Policy from time to time. However, because our core architectural philosophy is based on complete offline privacy and zero data collection, future updates will never compromise your offline data sovereignty without your explicit opt-in. Any updates will be posted directly within this document.</p>
         </section>
 
         <section id="contact">
           <div class="section-heading"><span class="number">7</span><h2 class="section-title">Contact Us</h2></div>
-          <p>For questions or feedback about this Privacy Policy or SaverJar's offline-first architecture, contact us:</p>
+          <p>For questions or feedback about this Privacy Policy or SaverJar’s offline-first architecture, contact us:</p>
           <div class="contact-card">
             <div>
               <strong>Email support</strong><br>
